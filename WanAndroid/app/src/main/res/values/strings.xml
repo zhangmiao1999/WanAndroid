@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">WanAndoid</string>
+    <string name="login">登录</string>
+    <string name="search_tint">Find more dry goods</string>
+    <string name="wanAndroid">WanAndroid</string>
+    <string name="collect">收藏</string>
+    <string name="setting">设置</string>
+    <string name="about">关于我们</string>
+    <string name="homePage">首页</string>
+    <string name="official">公众号</string>
+    <string name="navigation">导航</string>
+    <string name="knowledge">知识体系</string>
+    <string name="project">项目</string>
+    <string name="news">新</string>
+    <string name="week">搜索</string>
+    <string name="username">请输入用户名</string>
+    <string name="userpassworld">请输入密码</string>
+    <string name="register">注册</string>
+    <string name="ok_password">确认密码</string>
+    <string name="ed_password">输入密码</string>
+    <string name="ed_email">邮箱/手机号</string>
+    <string name="about_us">关于我们</string>
+    <string name="beSetting">通用设置</string>
+    <string name="setting_cache">自动缓存</string>
+    <string name="setting_image">无图模式</string>
+    <string name="setting_night">夜间模式</string>
+    <string name="other_setting">其它设置</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_clear">清除缓存</string>
+    <string name="common">常用网站</string>
+    <string name="hotweek">热搜</string>
+    <string name="weekhistory">搜索历史</string>
+    <string name="clear">清空</string>
+    <string name="about_content">网站内容</string>
+
+    <string name="WZcontent">\t\t本网站每天新增20~30篇优质文章，并加入到现有分类中，力求整理出一份优质而又详尽的知识体系，闲暇时间不妨上来学习
+下知识；除此以外，并为大家提供平时开发过程中常用的工具好以及常用的网址导航。</string>
+    <string name="WZcontent2">\t\t当然这只是我们目前的功能，未来我们将提供更多更加便捷的功能.....</string>
+    <string name="WZcontent3">\t\t如果您有任何好的建议：</string>
+    <string name="WZcontent4">\t\t\t关于网站排版\n\t\t\t关于新增常用网址以及工具\n\t\t\t未来你希望增加的功能等</string>
+    <string name="WZcontent5">\t\t可以在\n\t\thttps://github.com/hongyangAndroid/xueandroid项目中以issue的形式提出，我将及时跟进。</string>
+    <string name="WZcontent6">\t\t如果您希望长期关注本站,可以即加入我们的QQ群：591683946</string>
+    <string name="WZcontent7">\t\t本软件开源，如果你发现任何错误，不要犹豫，马上点击Github，在上面发起issue或者提交pull request.</string>
+    <string name="action_search">搜索</string>
+
+</resources>

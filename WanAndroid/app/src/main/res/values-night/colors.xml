@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#000000</color>
+    <color name="colorBlue">#000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="colorGray">#CCCCCC</color>
+    <color name="color8E8E8">#E8E8E8</color>
+    <color name="color757571">#757571</color>
+    <color name="colorOrange">#F39C14</color>
+    <color name="color009688">#009688</color>
+    <color name="color04F812">#04F812</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorE26D2E">#E26D2E</color>
+    <color name="alpha">#00ffffff</color>
+    <color name="color00ABFF">#00ABFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="color2E3D59">#2E3D59</color>
+    <color name="color999999">#999999</color>
+    <color name="color35BC9B">#35BC9B</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <color name="comment_text">#5b5d5c</color>
+    <color name="c_e7e7e7">#E7E7E7</color>
+    <color name="c_636363">#636363</color>
+    <color name="comment_line">#dddddd</color>
+    <color name="car_backgroud">#807e7e</color>
+    <color name="colorE6e6e6">#e6e6e6</color>
+    <color name="color4AC3A5">#4AC3A5</color>
+    <color name="color757575">#757575</color>
+    <color name="colorDE4628">#DE4628</color>
+</resources>

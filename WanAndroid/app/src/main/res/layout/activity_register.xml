@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2E3D59"
+    tools:context="com.example.wanandroid.ui.main.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@mipmap/toolbarleft" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_back"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="80dp"
+        android:hint="@string/ed_email"
+        android:textColorHint="@color/colorWhite"
+        android:background="@drawable/register_ed"
+        android:drawableLeft="@mipmap/email" />
+
+    <EditText
+        android:id="@+id/ed_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_email"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/ed_password"
+        android:textColorHint="@color/colorWhite"
+        android:background="@drawable/register_ed"
+        android:drawableLeft="@mipmap/openlock" />
+
+    <EditText
+        android:id="@+id/ok_psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_psd"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorWhite"
+        android:hint="@string/ok_password"
+        android:background="@drawable/register_ed"
+        android:drawableLeft="@mipmap/openlock" />
+
+    <Button
+        android:id="@+id/but_register"
+        android:background="@drawable/register"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/ok_psd"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
