@@ -8,28 +8,32 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardBackgroundColor="@color/colorWhite"
-        app:cardCornerRadius="3dp"
-        app:cardElevation="2dp">
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_8"
+        app:cardBackgroundColor="@color/colorCard"
+        app:cardCornerRadius="@dimen/dp_3"
+        app:cardElevation="@dimen/dp_2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="@dimen/dp_12">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:padding="10dp">
+                android:padding="@dimen/dp_10">
 
                 <TextView
                     android:id="@+id/tv_author"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@mipmap/icon_wan"
-                    android:drawablePadding="4dp"
+                    android:drawablePadding="@dimen/dp_5"
                     android:gravity="center_vertical"
                     android:text="@string/app_name"
                     tools:ignore="RtlHardcoded" />
@@ -42,7 +46,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/tv_author"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:text="@string/app_name"
                     android:textColor="@color/colorBlue"
                     tools:ignore="RtlHardcoded" />
@@ -53,39 +57,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:text="@string/app_name"
-                android:textSize="18sp" />
+                android:gravity="center"
+                android:text="@string/hotweek"
+                android:textColor="@color/comment_text"
+                android:textSize="@dimen/sp_16" />
 
             <RelativeLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:padding="10dp">
-
-                <ImageView
-                    android:id="@+id/iv_love"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/like_seleced"
-                    android:clickable="true" />
-
-                <TextView
-                    android:id="@+id/tv_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="6dp"
-                    android:layout_toRightOf="@+id/iv_love"
-                    android:drawableLeft="@mipmap/clock"
-                    android:drawablePadding="6dp"
-                    android:text="@string/app_name"
-                    tools:ignore="RtlHardcoded" />
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/news"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
                     android:layout_alignParentRight="true"
                     android:background="@drawable/news"
                     android:gravity="center"
@@ -95,21 +81,41 @@
 
                 <TextView
                     android:id="@+id/tv_navigation"
-                    android:layout_width="40dp"
-                    android:visibility="gone"
-                    android:layout_height="20dp"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_20"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="10dp"
-                    android:layout_toRightOf="@+id/news"
+                    android:layout_marginRight="@dimen/dp_24"
                     android:background="@drawable/navigation"
                     android:gravity="center"
                     android:text="@string/navigation"
-                    android:textColor="@color/colorRed" />
+                    android:textColor="@color/colorRed"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_love"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/like_seleced" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="@dimen/dp_220"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_toEndOf="@+id/iv_love"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableStart="@mipmap/clock"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/comment_text"
+                    tools:ignore="RtlCompat"
+                    tools:text="14小时之前" />
             </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
+        android:layout_height="@dimen/dp_0" />
 </RelativeLayout>

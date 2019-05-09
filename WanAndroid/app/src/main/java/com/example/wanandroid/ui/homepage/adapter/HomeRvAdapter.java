@@ -105,10 +105,10 @@ public class HomeRvAdapter extends RecyclerView.Adapter {
             itemViewHolder.mTvChapterName.setText(bean.getChapterName() + "/" + bean.getSuperChapterName());
             itemViewHolder.mTvTime.setText(bean.getNiceDate());
 
-            if (bean.isFresh()) {
-                itemViewHolder.mNews.setVisibility(View.VISIBLE);
-            } else {
+            if (bean.isFresh() !=true) {
                 itemViewHolder.mNews.setVisibility(View.GONE);
+            } else {
+                itemViewHolder.mNews.setVisibility(View.VISIBLE);
             }
 
             if (bean.getTags().size() > 0) {
@@ -116,6 +116,7 @@ public class HomeRvAdapter extends RecyclerView.Adapter {
             } else {
                 itemViewHolder.mTvNavigation.setVisibility(View.GONE);
             }
+
             itemViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

@@ -1,6 +1,7 @@
 package com.example.wanandroid.ui.navigation.fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,6 +17,7 @@ import com.example.wanandroid.presenter.NavigationPresenter;
 import com.example.wanandroid.ui.main.MainActivity;
 import com.example.wanandroid.ui.navigation.adapter.NavigationRvAdapter;
 import com.example.wanandroid.ui.navigation.adapter.TabAdapter;
+import com.example.wanandroid.ui.web.WebActivity;
 import com.example.wanandroid.view.NavigationView;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
@@ -63,8 +65,9 @@ public class NavigationFragment extends BaseFragment<NavigationView, NavigationP
         mNavigationRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mAdapter = new NavigationRvAdapter(getContext(), new ArrayList<NavigationBean.DataBean>());
         mNavigationRecyclerView.setAdapter(mAdapter);
-HideTablayout_Float();
+        HideTablayout_Float();
     }
+
     private void HideTablayout_Float() {
 
         final MainActivity mainActivity = (MainActivity) getActivity();
@@ -76,10 +79,10 @@ HideTablayout_Float();
 
                 int firstVisibleItem = ((LinearLayoutManager) recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
                 if (firstVisibleItem != 0) {
-                    if (dy > 15 ) {
+                    if (dy > 15) {
                         mainActivity.getFlaBut().setVisibility(View.GONE);
                         mainActivity.getRadioGroup().setVisibility(View.GONE);
-                    } else if (dy < -15 ) {
+                    } else if (dy < -15) {
                         mainActivity.getFlaBut().setVisibility(View.VISIBLE);
                         mainActivity.getRadioGroup().setVisibility(View.VISIBLE);
                     }
@@ -108,6 +111,7 @@ HideTablayout_Float();
 
             }
         });
+
 
     }
 

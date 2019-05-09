@@ -6,49 +6,49 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     android:clipToPadding="false"
-    android:paddingTop="25dp"
+    android:paddingTop="@dimen/dp_25"
     tools:showIn="@layout/activity_about">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="10dp">
+        android:paddingTop="@dimen/dp_10">
 
         <TextView
             android:id="@+id/aboutVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:drawablePadding="8dp"
+            android:layout_marginTop="@dimen/dp_16"
+            android:drawablePadding="@dimen/dp_8"
             android:drawableTop="@mipmap/ic_launcher"
             android:gravity="center"
             android:text="@string/wanAndroid"
             android:textAllCaps="false"
             android:textColor="@color/comment_text"
-            android:textSize="16sp" />
+            android:textSize="@dimen/sp_16" />
 
         <TextView
             android:id="@+id/aboutContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/dp_16"
             android:textColor="#000000"
-            android:textSize="20sp"
+            android:textSize="@dimen/sp_20"
             tools:text="@string/about_content" />
 
         <TextView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/dp_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="14dp"
+            android:layout_marginLeft="@dimen/dp_14"
             android:text="@string/WZcontent" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="14dp"
+            android:layout_margin="@dimen/dp_14"
             android:text="@string/WZcontent2" />
 
         <TextView
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="14dp"
+            android:layout_margin="@dimen/dp_14"
             android:text="@string/WZcontent4" />
 
         <TextView
@@ -71,16 +71,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="14dp"
+            android:layout_margin="@dimen/dp_14"
             android:text="@string/WZcontent6" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="源码位置"
-            android:layout_margin="14dp"
+            android:layout_margin="@dimen/dp_14"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="@dimen/sp_20" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:msvPrimaryColor="@color/colorPrimary"
-        app:msvViewportHeight="340dp" />
+        app:msvViewportHeight="@dimen/dp_340" />
     <!--srlViewportHeightHeight 设置为-->
     <!--AppBarLayout.Height + RefreshHeader.Height-->
     <!--效果最佳-->

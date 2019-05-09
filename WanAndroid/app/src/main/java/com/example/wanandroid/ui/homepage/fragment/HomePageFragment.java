@@ -106,7 +106,8 @@ public class HomePageFragment extends BaseFragment<HomeView, HomePresenter> impl
                 intent.putExtra("id", mAdapter.mList.get(position).getId());
                 intent.putExtra("title", mAdapter.mList.get(position).getTitle());
                 intent.putExtra("url", mAdapter.mList.get(position).getLink());
-                startActivityForResult(intent, 100);
+                startActivityForResult(intent, 210);
+                ToastUtil.showShort("点了跳不过去");
             }
         });
 
@@ -134,11 +135,10 @@ public class HomePageFragment extends BaseFragment<HomeView, HomePresenter> impl
             }
         });
 
-        activity.getFlaBut().setOnTouchListener(new View.OnTouchListener() {
+        activity.getFlaBut().setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public void onClick(View v) {
                 mRv.smoothScrollToPosition(0);
-                return true;
             }
         });
     }
@@ -146,7 +146,7 @@ public class HomePageFragment extends BaseFragment<HomeView, HomePresenter> impl
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 100 && resultCode == 200) {
+        if (requestCode == 210 && resultCode == 200) {
             boolean isBoolean = data.getBooleanExtra("isBoolean", true);
             Log.d(TAG, "isBoolean: " + isBoolean);
             if (isBoolean) {

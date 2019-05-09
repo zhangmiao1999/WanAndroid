@@ -30,14 +30,14 @@
                 android:ellipsize="end"
                 android:layout_toLeftOf="@+id/item_iv_love"
                 android:textColor="@color/White"
-                android:textSize="18sp" />
+                android:textSize="@dimen/sp_18" />
             <ImageView
                 android:layout_marginLeft="@dimen/dp_16"
                 android:layout_marginRight="@dimen/dp_16"
                 android:layout_marginTop="@dimen/dp_4"
                 android:id="@+id/item_iv_love"
                 android:layout_alignParentRight="true"
-                android:src="@mipmap/like_seleced"
+                android:src="@mipmap/ic_toolbar_like_n"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>

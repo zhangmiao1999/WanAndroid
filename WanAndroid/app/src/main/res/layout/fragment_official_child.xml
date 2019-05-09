@@ -2,40 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/rrrr"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_weight="0.85"
         android:gravity="center_vertical">
         <SearchView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
-            android:layout_height="26dp"
+            android:layout_height="@dimen/dp_26"
             android:iconifiedByDefault="false"
             android:gravity="center_vertical"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="@dimen/dp_10"
             android:layout_toLeftOf="@+id/week_but"
             android:queryHint="搜索内容" />
         <Button
             android:id="@+id/week_but"
-            android:layout_width="40dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_20"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp"
+            android:layout_marginRight="@dimen/dp_16"
             android:background="@drawable/week_but"
             android:gravity="center"
             android:text="@string/week"
             android:textColor="@color/colorWhite"
-            android:textSize="10sp" />
+            android:textSize="@dimen/sp_10" />
     </RelativeLayout>
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:id="@+id/smart"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_weight="9">
 
         <com.scwang.smartrefresh.header.BezierCircleHeader

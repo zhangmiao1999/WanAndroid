@@ -44,25 +44,25 @@
             android:layout_marginEnd="@dimen/dp_12"
             android:inputType="text"
             android:labelFor="@id/search_edit"
-            android:textColor="@color/title_black"
+            android:paddingEnd="@dimen/dp_1"
 
+            android:paddingStart="@dimen/dp_27"
+            android:textColor="@color/title_black"
             android:textCursorDrawable="@drawable/shape_cursor"
             android:textSize="@dimen/sp_14"
-            android:paddingStart="@dimen/dp_27"
-            android:paddingEnd="@dimen/dp_1"
             tools:ignore="RtlCompat" />
 
         <TextView
             android:id="@+id/search_tint_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_6"
+            android:drawableStart="@drawable/ic_search"
+            android:gravity="center"
             android:text="@string/search_tint"
             android:textColor="@color/grey_search"
             android:textSize="@dimen/sp_14"
-            android:gravity="center"
-            android:layout_centerVertical="true"
-            android:drawableStart="@drawable/ic_search"
-            android:layout_marginStart="@dimen/dp_6"
             tools:ignore="RtlCompat" />
     </RelativeLayout>
 </android.support.v7.widget.Toolbar>

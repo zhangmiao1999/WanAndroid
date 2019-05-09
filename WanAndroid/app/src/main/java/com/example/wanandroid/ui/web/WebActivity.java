@@ -64,7 +64,7 @@ public class WebActivity extends SimpleActivity {
         getBean();
         //一上来查询数据库
         mQuery = DaoUtil.getBaseUtil().query();
-        mItemIvLove.setImageResource(R.mipmap.like_seleced);
+        mItemIvLove.setImageResource(R.mipmap.ic_toolbar_like_n);
         for (int i = 0; i < mQuery.size(); i++) {
             //这是查询出来的link值
             String link = mQuery.get(i).getLink();
@@ -94,7 +94,7 @@ public class WebActivity extends SimpleActivity {
     @OnClick(R.id.item_iv_love)
     public void onViewClicked() {
         Drawable.ConstantState littleLove = getResources().getDrawable(R.mipmap.love_seleced).getConstantState();
-        Drawable.ConstantState littleLike = getResources().getDrawable(R.mipmap.like_seleced).getConstantState();
+        Drawable.ConstantState littleLike = getResources().getDrawable(R.mipmap.ic_toolbar_like_n).getConstantState();
         //当前图片
         Drawable.ConstantState nowPic = mItemIvLove.getDrawable().getConstantState();
 
@@ -107,7 +107,7 @@ public class WebActivity extends SimpleActivity {
                 List query = DaoUtil.getBaseUtil().query();
                 Log.d(TAG, "删完之后数据库还剩: "+query.size());
                 //改变状态为小黑心
-                mItemIvLove.setImageResource(R.mipmap.like_seleced);
+                mItemIvLove.setImageResource(R.mipmap.ic_toolbar_like_n);
             } else {
                 //状态还是红心
                 mItemIvLove.setImageResource(R.mipmap.love_seleced);
@@ -121,7 +121,7 @@ public class WebActivity extends SimpleActivity {
                 ToastUtil.showShort("收藏成功");
             } else {
                 //否则状态还是小黑心
-                mItemIvLove.setImageResource(R.mipmap.like_seleced);
+                mItemIvLove.setImageResource(R.mipmap.ic_toolbar_like_n);
                 ToastUtil.showShort("收藏失败");
             }
         }

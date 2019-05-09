@@ -1,6 +1,7 @@
 package com.example.wanandroid.ui.main;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -36,6 +37,7 @@ import com.example.wanandroid.ui.project.fragment.ProjectFragment;
 import com.example.wanandroid.ui.setting.SettingFragment;
 import com.example.wanandroid.ui.wx.fragment.OfficialFragment;
 import com.example.wanandroid.util.CircularAnimUtil;
+import com.example.wanandroid.util.SpUtil;
 import com.example.wanandroid.util.ToastUtil;
 
 import java.util.Timer;
@@ -207,7 +209,7 @@ public class MainActivity extends SimpleActivity {
         mNv.getHeaderView(0).findViewById(R.id.tv_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                startActivityForResult(new Intent(MainActivity.this, LoginActivity.class),3);
             }
         });
     }
@@ -219,6 +221,9 @@ public class MainActivity extends SimpleActivity {
             boolean isBoolean = data.getBooleanExtra("isBoolean", true);
             Log.d(TAG, "isBoolean: " + isBoolean);
             mIsBoolean = isBoolean;
+        }else if (requestCode == 3 && resultCode == 300){
+            TextView tv_login = mNv.getHeaderView(0).findViewById(R.id.tv_login);
+            tv_login.setText(data.getStringExtra("name"));
         }
     }
 
@@ -230,6 +235,14 @@ public class MainActivity extends SimpleActivity {
         setToolBarTitle(mToolBarTitle, App.getInstance().getResources().getString(R.string.homePage));
         initDrawLayout();
         initFragment();
+
+        TextView tv_login = mNv.getHeaderView(0).findViewById(R.id.tv_login);
+        SharedPreferences sp = getSharedPreferences("user", MODE_PRIVATE);
+        String name = sp.getString("name", "");
+        boolean flag = sp.getBoolean("flag", false);
+        if (flag){
+            tv_login.setText(name);
+        }
     }
 
     private void initFragment() {

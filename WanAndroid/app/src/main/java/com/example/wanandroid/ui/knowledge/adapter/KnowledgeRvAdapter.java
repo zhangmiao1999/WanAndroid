@@ -73,13 +73,11 @@ public class KnowledgeRvAdapter extends RecyclerView.Adapter {
     class ViewHolder extends RecyclerView.ViewHolder{
         TextView mKnowledgeTitle;
         TextView mKnowledgeInfo;
-        ImageView mKnowledgeIvImg;
 
         public ViewHolder(View itemView) {
             super(itemView);
             this.mKnowledgeTitle = (TextView) itemView.findViewById(R.id.knowledge_title);
             this.mKnowledgeInfo = (TextView) itemView.findViewById(R.id.knowledge_info);
-            this.mKnowledgeIvImg = (ImageView) itemView.findViewById(R.id.knowledge_iv_img);
         }
     }
 

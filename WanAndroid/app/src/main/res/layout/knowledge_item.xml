@@ -1,55 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardBackgroundColor="@color/White"
-        app:cardCornerRadius="3dp"
-        app:cardElevation="2dp">
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_8"
+        app:cardBackgroundColor="@color/colorCard"
+        app:cardCornerRadius="@dimen/dp_3"
+        app:cardElevation="@dimen/dp_2">
 
-        <LinearLayout
+
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_10">
+            <ImageView
+                android:id="@+id/knowledge_hierarchy_enter_iv"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical">
+                android:src="@mipmap/left"
+                android:contentDescription="@null"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_6"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/knowledge_hierarchy_enter_iv"
+                tools:ignore="RtlCompat">
 
                 <TextView
                     android:id="@+id/knowledge_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:text="@string/app_name"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/comment_text"
+                    tools:text="开发环境" />
 
                 <TextView
                     android:id="@+id/knowledge_info"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/knowledge_title"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/app_name" />
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:textColor="@color/comment_text"
+                    tools:text="Android Studio相关   gradle  官方发布" />
+            </LinearLayout>
+        </RelativeLayout>
 
-            </RelativeLayout>
-
-            <ImageView
-                android:id="@+id/knowledge_iv_img"
-                android:layout_marginRight="10dp"
-                android:layout_gravity="center_vertical"
-                android:src="@mipmap/left"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
     </android.support.v7.widget.CardView>
 </RelativeLayout>
